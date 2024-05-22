@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="/login.css">
+</head>
+
+<body>
+	<!-- Nav bar -->
+    <nav id="navbar">
+        <div id="logo">
+            <img id="logo-img" src="/jobhive-high-resolution-logo-transparent.png" alt="">
+        </div>
+        <div id="nav-content">
+            <div><a href="">JOB</a> </div>
+            <div><a href="">COMPANIES</a></div>
+            <div><a href="">SERVICES</a></div>
+            <div><a href="">PREFRENCES</a></div>
+        </div>  
+    </nav>
+
+	<div id="msg">
+		<h3 th:text="${msg}"></h3>
+	</div>
+	<form action="/login" method="post">
+		<h1>Login</h1><br>
+		<input type="text" name="emph" id="email" placeholder="E-mail address / Mobile No"><br><br>
+		<input type="password" name="password" id="password" placeholder="Password"><br><br>
+		<button>Login</button><br><br>
+		<div><a href="">Forgot Password?</a> | <a href="/signup">Sign Up</a></div><br>
+		<a href="">Terms and Conditions applied.</a>
+	</form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="/applicantHome.css">
+</head>
+
+<body>
+	<!-- Nav bar -->
+    <nav id="navbar">
+        <div id="logo">
+            <img id="logo-img" src="/jobhive-high-resolution-logo-transparent.png" alt="">
+        </div>
+        <div id="nav-content">
+            <div><a href="">JOB</a> </div>
+            <div><a href="">COMPANIES</a></div>
+            <div><a href="">SERVICES</a></div>
+            <div><a href="">PREFRENCES</a></div>
+            <div><a href="/logout"><button>LOGOUT</button></a></div>
+
+        </div>  
+    </nav>
+
+	<div id="msg">
+		<h3 th:text="${msg}"></h3>
+	</div>
+	<h1>Applicant Home</h1>
+    <button>Complete your profile</button>
+    <button>View Jobs</button>
+    <button>View applied Jobs</button>
+
+</body>
+</html>

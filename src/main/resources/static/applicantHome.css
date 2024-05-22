@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000000ff;
+    /* --light-sea-green: #33AFA5ff;
+    --tiffany-blue: #82CDC9ff;
+    --tiffany-blue-2: #6ED0C9ff;
+    --tiffany-blue-3: #89D8D3ff; */
+    --mint-cream: #F7FFFFff;
+    --lato: 'Lato', sans-serif;
+    --buttons:#F99417;
+    --text1:#4D4C7D;
+    --text2:#363062;
+}
+
+/* body */
+body {
+    background-image: url(../Resources/v915-wit-007-f.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #F5F5F5;
+    color: var(--text1);
+
+}
+
+#navbar {
+    height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: var(--lato);
+    font-weight: 600;
+    background-color: #fff;
+    color: var(--text1);
+    position: relative;
+
+}
+
+#logo-img {
+    position: absolute;
+    top: 10px;
+    left: 160px;
+    height: 55px;
+    width: 230px;
+}
+
+#nav-content {
+    width: 550px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-sea-green);
+}
+
+#msg{
+    /* border: 2px solid black; */
+    position: absolute;
+    top: 120px;
+    right: 90px;
+    height: 55px;
+    width: 300px;
+}
+
+
+table {
+    width: 1000px;
+    height: 600px;
+    border-spacing: 21px;
+
+    
+}
+
+#heading {
+    border-bottom: rgba(126, 208, 202, 255);
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    /* border: 2px solid black; */
+}
+
+#loginbox {
+    position: relative;
+}
+
+form {
+    position: absolute;
+    top: 170px;
+    left: 35%;
+    /* border: 2px solid black; */
+    height: 300px;
+    width: 350px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: var(--text1);
+
+}
+
+input{
+    height: 30px;
+    width: 280px;
+    padding: 0px 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    border:2px solid rgb(208, 206, 206);
+    font-family: 'Varela Round', sans-serif;
+
+}
+button{
+    height: 30px;
+    width: 280px;
+    padding: 0px 40px;
+    border-radius: 10px;
+    background-color: var(--buttons);
+    border: none;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#signin-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background:  var(--buttons);
+}

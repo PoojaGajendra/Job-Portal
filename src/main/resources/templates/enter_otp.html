@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Enter_otp</title>
+	<link rel="stylesheet" type="text/css" href="/enter_otp.css">
+
+</head>
+
+<body>
+	<!-- Nav bar -->
+	<nav id="navbar">
+		<div id="logo">
+			<img id="logo-img" src="/jobhive-high-resolution-logo-transparent.png" alt="">
+		</div>
+		<div id="nav-content">
+			<div><a href="">JOB</a> </div>
+			<div><a href="">COMPANIES</a></div>
+			<div><a href="">SERVICES</a></div>
+			<div><a href="">PREFRENCES</a></div>
+			<div><button><a href="/signup">SIGNUP</a></button></div>
+			<div><button><a href="/login">LOGIN</a></button></div>
+		</div>
+	</nav>
+	<!-- body      -->
+	<div id="msg">
+		<h3 th:text="${msg}"></h3>
+	</div>
+
+	<!--   -->
+	<div id="form">
+		<form action="/submit_otp" method="post">
+			Enter Otp:
+			<input name="otp" type="number"><br><br>
+			<input type="hidden" name="id" th:value="${id}">
+			<button>Submit</button><br><br>
+		</form>
+		<a th:href="'/resend-otp/'+${id}"><button>Resend otp</button></a>
+	</div>
+</body>
+
+</html>
